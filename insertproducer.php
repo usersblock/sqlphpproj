@@ -14,6 +14,6 @@ if(!mysqli_query($conn,$sql))
 {
  echo("Error description: " . mysqli_error($con));
 }
-mysqli_close($con);
+mysqli_close($conn);
 echo "Connected successfully";
 ?>
