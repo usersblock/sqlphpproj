@@ -10,6 +10,6 @@ $addressvalue=$_POST["address"];
 $sql = "INSERT INTO PRODUCER(name,address)
 VALUES ('$namevalue', '$addressvalue')";
 
-mysql_query($sql);
+mysqli_query($sql);
 echo "Connected successfully";
 ?>
