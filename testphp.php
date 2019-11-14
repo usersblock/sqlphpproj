@@ -183,7 +183,7 @@ $conn = mysqli_connect("134.74.112.21","ly019f","thomas","d115");
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$sql = "SELECT * FROM CUSTOMER";
+$sql = "SELECT * FROM VIP";
 if(!mysqli_query($conn,$sql))
 {
  echo("Error description: " . mysqli_error($conn));
@@ -277,7 +277,7 @@ if ($result->num_rows > 0) {
 mysqli_close($conn);
 ?>
 
-Produces<br>
+Rents<br>
 <?php
 $conn = mysqli_connect("134.74.112.21","ly019f","thomas","d115");
 if (!$conn) {
@@ -304,5 +304,4 @@ mysqli_close($conn);
 
 </body>
 </html>
-
 
