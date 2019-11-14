@@ -22,8 +22,8 @@
   SSN: <input type="text" name="ssn"><br>
   telephone: <input type="text" name="telephone"><br>
   CD title: <input type="text" name="title"><br>
-  borrow date: <input type="text" name="borrowdate(yyy-mm-dd)"><br>
-  duration: <input type="text" name="duration(Integer in days)"><br>
+  borrow date: <input type="text" name="borrowdate"><br>
+  duration: <input type="text" name="duration"><br>
 </form>
 <button type="submit" form="insertcustomerrent" value="Submit">Submit</button>
 
@@ -32,17 +32,17 @@
   Vip Name: <input type="text" name="name"><br>
   SSN: <input type="text" name="ssn"><br>
   telephone: <input type="text" name="telephone"><br>
-  startingdate: <input type="text" name="startingdate(yyyy-mm-dd)"><br>
-  discount percentage: <input type="text" name="discountpercentage(number only)"><br>
+  startingdate: <input type="text" name="startingdate"><br>
+  discount percentage: <input type="text" name="discountpercentage"><br>
   CD title: <input type="text" name="title"><br>
-  borrow date: <input type="text" name="borrowdate(yyyy-mm-dd)"><br>
-  duration: <input type="text" name="duration(Integer in days)"><br>
+  borrow date: <input type="text" name="borrowdate"><br>
+  duration: <input type="text" name="duration"><br>
 </form>
 <button type="submit" form="insertviprent" value="Submit">Submit</button>
 
 <form action="cddeadline.php" method="post" id="cddeadline">
   Title:<input type="text" name="title"><br>
-  Date: <input type="text" name="date(yyyy-mm-dd)"><br>
+  Date: <input type="text" name="date"><br>
 </form>
 <button type="submit" form="cddeadline" value="Submit">Submit</button>
 
@@ -75,7 +75,6 @@ if ($result->num_rows > 0) {
 }
 }
 mysqli_close($conn);
-echo "Connected successfully";
 ?>
 
 Song<br>
@@ -101,7 +100,6 @@ if ($result->num_rows > 0) {
 }
 }
 mysqli_close($conn);
-echo "Connected successfully";
 ?>
 
 Producer<br>
@@ -127,7 +125,6 @@ if ($result->num_rows > 0) {
 }
 }
 mysqli_close($conn);
-echo "Connected successfully";
 ?>
 
 Supplier<br>
@@ -153,7 +150,6 @@ if ($result->num_rows > 0) {
 }
 }
 mysqli_close($conn);
-echo "Connected successfully";
 ?>
 
 Customer<br>
@@ -179,7 +175,6 @@ if ($result->num_rows > 0) {
 }
 }
 mysqli_close($conn);
-echo "Connected successfully";
 ?>
 
 Vip<br>
@@ -205,7 +200,6 @@ if ($result->num_rows > 0) {
 }
 }
 mysqli_close($conn);
-echo "Connected successfully";
 ?>
 
 Has<br>
@@ -231,7 +225,6 @@ if ($result->num_rows > 0) {
 }
 }
 mysqli_close($conn);
-echo "Connected successfully";
 ?>
 
 Produces<br>
@@ -257,7 +250,6 @@ if ($result->num_rows > 0) {
 }
 }
 mysqli_close($conn);
-echo "Connected successfully";
 ?>
 
 Supplied<br>
@@ -283,7 +275,6 @@ if ($result->num_rows > 0) {
 }
 }
 mysqli_close($conn);
-echo "Connected successfully";
 ?>
 
 Produces<br>
@@ -309,9 +300,9 @@ if ($result->num_rows > 0) {
 }
 }
 mysqli_close($conn);
-echo "Connected successfully";
 ?>
 
 </body>
 </html>
+
 
