@@ -12,7 +12,7 @@ VALUES ('$namevalue', '$addressvalue')";
 
 if(!mysqli_query($conn,$sql))
 {
- echo("Error description: " . mysqli_error($con));
+ echo("Error description: " . mysqli_error($conn));
 }
 mysqli_close($conn);
 echo "Connected successfully";
