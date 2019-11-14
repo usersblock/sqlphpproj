@@ -1,12 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 <body>
+Insert Producer <br>
 <form action="insertproducer.php" method="post" id="insertproducer">
   Name: <input type="text" name="name"><br>
   Address: <input type="text" name="address"><br>
 </form>
 <button type="submit" form="insertproducer" value="Submit">Submit</button>
-
+Insert Cd<br>
 <form action="insertcd.php" method="post" id="insertcd">
   Title:<input type="text" name="title"><br>
   Year: <input type="text" name="year"><br>
@@ -16,7 +17,7 @@
 </form>
 
 <button type="submit" form="insertcd" value="Submit">Submit</button>
-
+Insert Customer and rented item<br>
 <form action="insertcustomerrent.php" method="post" id="insertcustomerrent">
   Name: <input type="text" name="name"><br>
   SSN: <input type="text" name="ssn"><br>
@@ -27,7 +28,7 @@
 </form>
 <button type="submit" form="insertcustomerrent" value="Submit">Submit</button>
 
-
+Insert VIP and rented item<br>
 <form action="insertviprent.php" method="post" id="insertviprent">
   Vip Name: <input type="text" name="name"><br>
   SSN: <input type="text" name="ssn"><br>
@@ -39,13 +40,13 @@
   duration: <input type="text" name="duration"><br>
 </form>
 <button type="submit" form="insertviprent" value="Submit">Submit</button>
-
+Find customer lateness information<br>
 <form action="cddeadline.php" method="post" id="cddeadline">
   Title:<input type="text" name="title"><br>
   Date: <input type="text" name="date"><br>
 </form>
 <button type="submit" form="cddeadline" value="Submit">Submit</button>
-
+Find producer of artist and year<br>
 <form action="findproducer.php" method="post" id="findproducer">
   Artist:<input type="text" name="artist"><br>
   Year: <input type="text" name="year"><br>
