@@ -7,7 +7,7 @@ if (!$conn) {
 //Connecting done
 $titlevalue=$_POST["title"];
 $datevalue=$_POST["date"];
-$sql = "SELECT name,telephone FROM CUSTOMER WHERE socialsecuritynumber<>
+$sql = "SELECT name,telephone FROM CUSTOMER WHERE socialsecuritynumber IN
 (SELECT socialsecuritynumber FROM RENTS WHERE title='$titlevalue' AND DATE_ADD(date,INTERVAL rentperiod DAY)<='$datevalue')";
 
 if(!mysqli_query($conn,$sql))
