@@ -8,7 +8,7 @@ if (!$conn) {
 $titlevalue=$_POST["title"];
 $datevalue=$_POST["date"];
 $sql = "SELECT name,telephone FROM CUSTOMER WHERE socialsecuritynumber<>
-(SELECT socialsecuritynumber FROM RENTS WHERE title='$titlevalue' AND DATE_ADD('d',rentperiod,date)<='$datevalue')";
+(SELECT socialsecuritynumber FROM RENTS WHERE title='$titlevalue' AND DATE_ADD(date,INTERVAL rentperiod DAY)<='$datevalue')";
 
 if(!mysqli_query($conn,$sql))
 {
