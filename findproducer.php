@@ -8,9 +8,9 @@ if (!$conn) {
 $artistvalue=$_POST["artist"];
 $yearvalue=$_POST["year"];
 $sql = "SELECT * FROM PRODUCER WHERE name<>
-(SELECT name FROM PRODUCES WHERE title<>(SELECT title FROM CD WHERE year=$yearvalue AND title<>
+(SELECT name FROM PRODUCES WHERE title<>(SELECT title FROM CD WHERE year='$yearvalue' AND title<>
 (SELECT title FROM HAS WHERE tracknumber <>
-(SELECT tracknumber FROM SONG WHERE artist=$artistvalue))))";
+(SELECT tracknumber FROM SONG WHERE artist='$artistvalue'))))";
 
 if(!mysqli_query($conn,$sql))
 {
